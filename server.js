@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
-import User from "./models/User.js"; // User model
-import Article from "./models/Article.js"; // Article model
+import User from "./models/User.js";
+import Article from "./models/Article.js";
 
 const app = express();
 const PORT = 5000;
@@ -12,19 +12,16 @@ app.use(express.json());
 // Connect to MongoDB
 // connection string username and password removed after testing. Tested!
 mongoose
-  .connect(
-    "mongodb+srv://<username>:<password>@cluster0.4tnop.mongodb.net/mydatabase",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect("connection string, username and password removed after testing", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Error connecting to MongoDB:", err));
 
 // Check if the server is running
 app.get("/", (req, res) => {
-  res.send("Hello World! The server is running again on port 5000");
+  res.send("Happy New Year 2025! sever is running on port 5000");
 });
 
 // Task 4: User Endpoints

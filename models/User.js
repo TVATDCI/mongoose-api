@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
   lastName: { type: String, required: true }, // Required field
   bands: [String],
   instruments: [String],
-  albums: [albumSchema.schema], //Reference the album schema as a subdocument
+  albums: [albumSchema.schema], //Reference the album schema as a subdoccument
   birthday: { type: Date, required: true }, // Required field
   createOn: { type: Date, default: Date.now }, // Default value
 });
