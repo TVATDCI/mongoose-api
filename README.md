@@ -1,6 +1,6 @@
 # mongoose-api-user-album-schema
 
-# Working with mongoose schemas
+## Working with mongoose schemas
 
 Create a small API that can handle database interactions, while practising schema validation.
 
